@@ -1,0 +1,6 @@
+flowchart LR
+  Bytes[UTF-8 document bytes] --> Validate[Extension and byte limit]
+  Validate --> Normalize[Unicode and whitespace normalization]
+  Normalize --> Chunk[Word bounded chunks with overlap]
+  Chunk --> IDs[Stable SHA-256 identifiers]
+  IDs --> JSON[CLI JSON output]

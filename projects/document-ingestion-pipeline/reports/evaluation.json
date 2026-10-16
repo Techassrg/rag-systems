@@ -1,0 +1,17 @@
+{
+  "evaluation_type": "deterministic offline contract tests",
+  "runtime": "Python 3.11.7",
+  "result": "6 passed",
+  "coverage": [
+    "stable document and chunk identifiers",
+    "chunk size and overlap behavior",
+    "unsupported extension and path rejection",
+    "invalid UTF-8 and empty document rejection",
+    "document byte limit",
+    "invalid chunk configuration"
+  ],
+  "limitations": [
+    "word-count chunks are not model-token aware",
+    "no throughput benchmark was run"
+  ]
+}

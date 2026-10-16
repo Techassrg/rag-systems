@@ -1,0 +1,9 @@
+flowchart LR
+  Request[POST /v1/search] --> Validate[FastAPI request bounds]
+  Validate --> BM25[BM25 lexical score]
+  Validate --> TFIDF[Sparse TF-IDF cosine]
+  Corpus[(Local chunk corpus)] --> BM25
+  Corpus --> TFIDF
+  BM25 --> Combine[Weighted normalized score]
+  TFIDF --> Combine
+  Combine --> Explain[Ranked results with score breakdown]

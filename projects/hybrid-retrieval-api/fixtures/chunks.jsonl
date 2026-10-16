@@ -1,0 +1,4 @@
+{"chunk_id":"payment-timeout-1","source_name":"payment-timeout.md","text":"The payment adapter returned a timeout after a synthetic authorization request. The payment state remained pending because no final response arrived."}
+{"chunk_id":"payment-retry-1","source_name":"payment-retry.md","text":"Before retrying authorization, the service checks transaction status and reuses the idempotency key to avoid duplicate payment attempts."}
+{"chunk_id":"database-latency-1","source_name":"database-latency.md","text":"A synthetic database connection pool reached its configured limit. Operators can inspect active connections and request queue depth."}
+{"chunk_id":"transfer-reconciliation-1","source_name":"transfer-reconciliation.md","text":"The synthetic transfer reconciliation job compares internal ledger entries with adapter status and reports unmatched transactions for review."}
